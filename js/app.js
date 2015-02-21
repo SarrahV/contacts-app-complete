@@ -12,7 +12,7 @@ var App = (function(){
     this.addListeners();
   }
 
-  App.prototype = {
+  App.prototype = {//like list on our albums!!!
 
     getGroupNames: function() {
       return _.chain(this.data)
@@ -39,7 +39,7 @@ var App = (function(){
       });
     },
 
-    showContacts: function(groupName) {
+    showContacts: function(groupName) {  // like our album photos
       var contactData = this.getGroup(groupName);
       var cl = new ContactList(contactData);
       this.currentGroup = groupName;
